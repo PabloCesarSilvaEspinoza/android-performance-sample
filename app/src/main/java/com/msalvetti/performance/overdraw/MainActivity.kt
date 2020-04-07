@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(),
         presenter.init(this)
     }
 
-    override fun loadData(globers: List<Glober>) {
-        adapter.globers = globers
+    override fun loadData(movies: List<Movie>) {
+        adapter.movies = movies
     }
 }
