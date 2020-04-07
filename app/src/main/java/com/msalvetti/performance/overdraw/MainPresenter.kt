@@ -1,4 +1,6 @@
-package com.recaldev.performance
+package com.msalvetti.performance.overdraw
+
+import com.msalvetti.performance.R
 
 class MainPresenter {
 
@@ -14,63 +16,62 @@ class MainPresenter {
     }
 
     private fun getMockedData(): List<Glober> {
-        val glober1 = Glober(
-            "Diego Recalde",
+        val movie1 = Glober(
+            "Movie 1",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             R.drawable.icon1
         )
 
-        val glober2 = Glober(
-            "Gerardo Suarez",
+        val movie2 = Glober(
+            "Movie 2",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             R.drawable.icon2
         )
 
-        val glober3 = Glober(
-            "Alfredo Koch",
+        val movie3 = Glober(
+            "Movie 3",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             NO_AVATAR
         )
 
-        val glober4 = Glober(
-            "Nathaly Mesa",
+        val movie4 = Glober(
+            "Movie 4",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             R.drawable.icon3
         )
 
-        val glober5 = Glober(
-            "Santiago Carmona",
+        val movie5 = Glober(
+            "Movie 5",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             NO_AVATAR
         )
 
-        val glober6 = Glober(
-            "Daniel Juarez",
+        val movie6 = Glober(
+            "Movie 6",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             R.drawable.icon4
         )
 
-        val glober7 = Glober(
-            "Claudia Arcila",
+        val movie7 = Glober(
+            "Movie 7",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             R.drawable.icon5
         )
 
-        val glober8 = Glober(
-            "Jorge Morales",
+        val movie8  = Glober(
+            "Movie 8",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             R.drawable.icon1
         )
 
-        val glober9 = Glober(
-            "Gina Cerón",
+        val movie9 = Glober(
+            "Movie 9",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             NO_AVATAR
         )
 
         return listOf(
-            glober1, glober2, glober3, glober4, glober5, glober6, glober7, glober8, glober9,
-            glober1, glober2, glober3, glober4, glober5, glober6, glober7, glober8, glober9
+            movie1,movie2,movie3,movie4,movie5,movie6,movie7,movie8,movie9
         )
     }
 }

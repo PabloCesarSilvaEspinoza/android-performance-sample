@@ -1,4 +1,4 @@
-package com.recaldev.performance
+package com.msalvetti.performance.overdraw
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.msalvetti.performance.R
 import kotlin.properties.Delegates
 
 const val NO_AVATAR = 0
@@ -21,7 +22,11 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_main_adapter, parent, false)
+                .inflate(
+                    R.layout.item_main_adapter,
+                    parent,
+                    false
+                )
         )
     }
 

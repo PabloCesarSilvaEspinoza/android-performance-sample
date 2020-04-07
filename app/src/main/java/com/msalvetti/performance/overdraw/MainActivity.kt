@@ -1,11 +1,13 @@
-package com.recaldev.performance
+package com.msalvetti.performance.overdraw
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.msalvetti.performance.R
 
-class MainActivity : AppCompatActivity(), MainPresenter.View {
+class MainActivity : AppCompatActivity(),
+    MainPresenter.View {
 
     private lateinit var presenter: MainPresenter
 
