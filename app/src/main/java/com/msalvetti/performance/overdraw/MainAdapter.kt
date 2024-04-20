@@ -46,10 +46,14 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
             name.text = movie.name
             description.text = movie.description
 
-            Glide.with(itemView.context)
-                .load(movie.avatarRes)
-                .centerCrop()
-                .into(movieAvatar)
+            if (movie.avatarRes == NO_AVATAR) {
+                movieAvatar.setBackgroundColor(itemView.context.getColor(R.color.colorPrimary))
+            }else {
+                Glide.with(itemView.context)
+                    .load(movie.avatarRes)
+                    .centerCrop()
+                    .into(movieAvatar)
+            }
         }
     }
 }
